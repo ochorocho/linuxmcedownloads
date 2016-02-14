@@ -1,0 +1,103 @@
+<T3DataStructure>
+    <sheets>
+        <sDEF>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>Download config</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+                    <settings.url>
+                        <TCEforms>
+                            <label>LLL:EXT:linuxmcedownloads/Resources/Private/Language/locallang_flexform.xlf:url</label>
+                            <config>
+                                <type>input</type>
+                                <size>50</size>
+                                <eval>text</eval>
+                            </config>
+                        </TCEforms>
+                    </settings.url>
+
+                    <settings.hideFilesTypes>
+                        <TCEforms>
+                            <label>LLL:EXT:linuxmcedownloads/Resources/Private/Language/locallang_flexform.xlf:hiddenFileTypes</label>
+                            <config>
+                                <type>input</type>
+                                <size>50</size>
+                                <eval>text</eval>
+                                <default>zsync,md5</default>
+                            </config>
+                        </TCEforms>
+                    </settings.hideFilesTypes>
+                    <settings.sslCheckDisable>
+                        <TCEforms>
+                            <label>LLL:EXT:linuxmcedownloads/Resources/Private/Language/locallang_flexform.xlf:sslCheckDisable</label>
+                            <config>
+                                <type>check</type>
+                                <default>0</default>
+                            </config>
+                        </TCEforms>
+                    </settings.sslCheckDisable>
+                    <settings.showMd5>
+                        <TCEforms>
+                            <label>LLL:EXT:linuxmcedownloads/Resources/Private/Language/locallang_flexform.xlf:showMd5</label>
+                            <config>
+                                <type>check</type>
+                                <default>0</default>
+                            </config>
+                        </TCEforms>
+                    </settings.showMd5>
+                    <settings.showPagination>
+                        <TCEforms>
+                            <label>LLL:EXT:linuxmcedownloads/Resources/Private/Language/locallang_flexform.xlf:showPagination</label>
+                            <config>
+                                <type>check</type>
+                                <default>0</default>
+                            </config>
+                        </TCEforms>
+                    </settings.showPagination>
+                    <settings.sort>
+                        <TCEforms>
+                            <label>LLL:EXT:linuxmcedownloads/Resources/Private/Language/locallang_flexform.xlf:sort</label>
+                            <config>
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">LLL:EXT:linuxmcedownloads/Resources/Private/Language/locallang_flexform.xlf:sortByDate</numIndex>
+                                        <numIndex index="1">date</numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">LLL:EXT:linuxmcedownloads/Resources/Private/Language/locallang_flexform.xlf:sortByName</numIndex>
+                                        <numIndex index="1">name</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">LLL:EXT:linuxmcedownloads/Resources/Private/Language/locallang_flexform.xlf:sortBySize</numIndex>
+                                        <numIndex index="1">size</numIndex>
+                                    </numIndex>
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </settings.sort>
+                    <settings.sortDirection>
+                        <TCEforms>
+                            <label>LLL:EXT:linuxmcedownloads/Resources/Private/Language/locallang_flexform.xlf:sortDirection</label>
+                            <config>
+                                <type>select</type>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">LLL:EXT:linuxmcedownloads/Resources/Private/Language/locallang_flexform.xlf:sortAsc</numIndex>
+                                        <numIndex index="1">asc</numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">LLL:EXT:linuxmcedownloads/Resources/Private/Language/locallang_flexform.xlf:sortDesc</numIndex>
+                                        <numIndex index="1">desc</numIndex>
+                                    </numIndex>
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </settings.sortDirection>
+                </el>
+            </ROOT>
+        </sDEF>
+    </sheets>
+</T3DataStructure>

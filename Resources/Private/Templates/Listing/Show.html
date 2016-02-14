@@ -1,0 +1,37 @@
+<table class="downloads">
+    <thead><tr><th>Version</th><th>Released</th><th>Size</th>
+        <f:if condition="{settings.showMd5}">
+            <th class="show-for-medium-up">MD5 Hash</th>
+        </f:if>
+    </tr></thead>
+
+    <f:if condition="{settings.showPagination}">
+        <f:then>
+            <f:widget.paginate objects="{downloads}" as="downloadPage" configuration="{itemsPerPage: '{settings.pagination.itemsPerPage}', insertAbove: '{settings.pagination.insertAbove}', insertBelow: '{settings.pagination.insertBelow}', maximumNumberOfLinks: '{settings.pagination.maximumNumberOfLinks}'}"> 
+        
+               <f:for each="{downloadPage}" as="download" iteration="iteratorMarker">
+                    <tr>
+                        <td><a class="button tiny" href="{download.url}"><f:format.htmlentitiesDecode><i class="size-16 fi-arrow-down"> </i>{download.name}</f:format.htmlentitiesDecode></a></td>
+                        <td><f:format.html>{download.date}</f:format.html></td>
+                        <td><f:format.html>{download.size}GB</f:format.html></td>
+                        <f:if condition="{settings.showMd5}">
+                            <td class="show-for-medium-up"><f:format.html><small>{download.md5}</small></f:format.html></td>
+                        </f:if>
+                    </tr>
+               </f:for>
+            </f:widget.paginate>     
+        </f:then>
+        <f:else>
+            <f:for each="{downloads}" as="download">
+                <tr>
+                    <td><a class="button tiny" href="{download.url}"><f:format.htmlentitiesDecode><i class="size-16 fi-arrow-down"> </i>{download.name}</f:format.htmlentitiesDecode></a></td>
+                    <td><f:format.html>{download.date}</f:format.html></td>
+                    <td><f:format.html>{download.size}GB</f:format.html></td>
+                    <f:if condition="{settings.showMd5}">
+                        <td class="show-for-medium-up"><f:format.html><small>{download.md5}</small></f:format.html></td>
+                    </f:if>
+                </tr>
+            </f:for>
+        </f:else>
+    </f:if>
+</table>

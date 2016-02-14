@@ -1,0 +1,49 @@
+{
+    "modules": [],
+    "properties": {
+        "backendModules": [],
+        "description": "Parse LinuxMCE Downloads",
+        "emConf": {
+            "category": "plugin",
+            "custom_category": "",
+            "dependsOn": "typo3 => 7.6.0-7.6.99\n",
+            "disableLocalization": false,
+            "disableVersioning": false,
+            "skipGenerateDocumentationTemplate": false,
+            "sourceLanguage": "en",
+            "state": "alpha",
+            "targetVersion": "7.6.0-7.6.99",
+            "version": ""
+        },
+        "extensionKey": "linuxmcedownloads",
+        "name": "LinuxMCE Downloads",
+        "originalExtensionKey": "",
+        "originalVendorName": "",
+        "persons": [
+            {
+                "company": "LinuxMCE",
+                "email": "rothjochen@gmail.com",
+                "name": "Jochen Roth",
+                "role": "Developer"
+            }
+        ],
+        "plugins": [
+            {
+                "actions": {
+                    "controllerActionCombinations": "",
+                    "noncacheableActions": "",
+                    "switchableActions": ""
+                },
+                "key": "listdownloads",
+                "name": "List Downloads (parse Apache index)"
+            }
+        ],
+        "vendorName": "Linuxmce"
+    },
+    "wires": [],
+    "log": {
+        "last_modified": "2016-02-11 11:46",
+        "extension_builder_version": "7.6.0",
+        "be_user": " (1)"
+    }
+}

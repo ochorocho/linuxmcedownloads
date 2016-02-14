@@ -1,0 +1,15 @@
+
+plugin.tx_linuxmcedownloads_listdownloads {
+	view {
+		# cat=plugin.tx_linuxmcedownloads_listdownloads/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:linuxmcedownloads/Resources/Private/Templates/
+		# cat=plugin.tx_linuxmcedownloads_listdownloads/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:linuxmcedownloads/Resources/Private/Partials/
+		# cat=plugin.tx_linuxmcedownloads_listdownloads/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:linuxmcedownloads/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_linuxmcedownloads_listdownloads//a; type=string; label=Default storage PID
+		storagePid =
+	}
+}

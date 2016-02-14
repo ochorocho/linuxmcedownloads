@@ -1,0 +1,58 @@
+
+plugin.tx_linuxmcedownloads_listdownloads {
+	view {
+		templateRootPaths.0 = {$plugin.tx_linuxmcedownloads_listdownloads.view.templateRootPath}
+		partialRootPaths.0 = {$plugin.tx_linuxmcedownloads_listdownloads.view.partialRootPath}
+		layoutRootPaths.0 = {$plugin.tx_linuxmcedownloads_listdownloads.view.layoutRootPath}
+		widget.TYPO3\CMS\Fluid\ViewHelpers\Widget\PaginateViewHelper.templateRootPath = EXT:linuxmcedownloads/Resources/Private/Templates/
+	}
+	persistence {
+		storagePid = {$plugin.tx_linuxmcedownloads_listdownloads.persistence.storagePid}
+	}
+	settings {
+    	url = https://www.knallimall.org/
+    	sslCheckDisable = 0
+    	hideFilesTypes = md5,zsync
+    	showMd5 = 0
+        pagination {
+			itemsPerPage = 10
+			insertAbove = 1
+			insertBelow = 0
+			maximumNumberOfLinks = 10
+		}
+	}
+}
+
+plugin.tx_linuxmcedownloads._CSS_DEFAULT_STYLE (
+	textarea.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	input.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	.tx-linuxmcedownloads table {
+		border-collapse:separate;
+		border-spacing:10px;
+	}
+
+	.tx-linuxmcedownloads table th {
+		font-weight:bold;
+	}
+
+	.tx-linuxmcedownloads table td {
+		vertical-align:top;
+	}
+
+	.typo3-messages .message-error {
+		color:red;
+	}
+
+	.typo3-messages .message-ok {
+		color:green;
+	}
+
+)

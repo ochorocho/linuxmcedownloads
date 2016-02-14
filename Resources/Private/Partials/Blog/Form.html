@@ -1,0 +1,31 @@
+<h1>{headline}</h1>
+
+<div class="alert alert-danger">
+<f:render partial="Error" arguments="{object:'blog'}"/>
+</div>
+
+<f:form action="{action}" object="{blog}" name="blog" additionalAttributes="{role:'form'}">
+
+    <div class="form-group">
+        <label>Blog Titel</label>
+        <f:form.validationResults for="blog">
+            <f:if condition="{validationResults.flattenedErrors.title}">(FEHLER!)</f:if>
+        </f:form.validationResults>
+        <f:form.textfield property="title" class="form-control"/>
+    </div>
+
+    <f:if condition="{action} != 'add123'">
+        <f:then>
+    <div class="form-group">
+        <label>Blog Beschreibung</label>
+        <f:form.textarea property="description" class="form-control"/>
+    </div>
+        </f:then>
+        <f:else>
+            Keine Aktualisierung im Update Modus möglich!
+        </f:else>
+    </f:if>
+
+    <f:form.submit value="{submitmessage}" class="btn btn-primary"/>
+
+</f:form>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2014-05-02T12:00:00Z" product-name="powermail">
+		<header/>
+		<body>
+			<trans-unit id="url">
+				<source>URL</source>
+			</trans-unit>
+			<trans-unit id="hiddenFileTypes">
+				<source>Hide Filetypes</source>
+			</trans-unit>
+			<trans-unit id="sslCheckDisable">
+				<source>Disable SSL Check</source>
+			</trans-unit>
+			<trans-unit id="showMd5">
+				<source>Show md5 file (*.md5 is required for each file)</source>
+			</trans-unit>
+			<trans-unit id="sort">
+				<source>Sorting</source>
+			</trans-unit>
+			<trans-unit id="sortByDate">
+				<source>by date</source>
+			</trans-unit>
+			<trans-unit id="sortByName">
+				<source>by name</source>
+			</trans-unit>
+			<trans-unit id="sortBySize">
+				<source>by size</source>
+			</trans-unit>
+			<trans-unit id="sortDirection">
+				<source> Sort direction</source>
+			</trans-unit>
+			<trans-unit id="sortAsc">
+				<source>ascending</source>
+			</trans-unit>
+			<trans-unit id="sortDesc">
+				<source>descending</source>
+			</trans-unit>
+			<trans-unit id="showPagination">
+				<source>Show pagination</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

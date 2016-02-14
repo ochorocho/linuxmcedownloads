@@ -1,0 +1,43 @@
+<h1>{headline}</h1>
+
+<div class="alert alert-danger">
+<f:render partial="Error" arguments="{object:'post'}"/>
+</div>
+
+<f:form action="{action}" object="{post}" arguments="{blog:blog}" name="post" additionalAttributes="{role:'form'}">
+
+    <div class="form-group">
+        <label>Post Titel</label>
+        <f:form.textfield property="title" class="form-control"/>
+    </div>
+
+    <div class="form-group">
+        <label>Post Inhalt</label>
+        <f:form.textarea property="content" class="form-control"/>
+    </div>
+
+    <div class="form-group">
+        <label>Post Tags</label>
+        <f:form.select property="tags" options="{tags}" optionLabelField="tagvalue" multiple="1" size="5" class="form-control"/>
+    </div>
+
+    <div class="form-group">
+        <label>Post Autor</label>
+        <f:form.select property="author" options="{authors}" optionLabelField="fullname" class="form-control"/>
+    </div>
+
+    <f:form.submit value="{submitmessage}" class="btn btn-primary"/>
+
+</f:form>
+
+
+
+
+
+
+
+
+
+
+
+
